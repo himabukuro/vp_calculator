@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>VP計算機</title>
+</head>
+<body>
+    <h1>VP計算機</h1>
+    <form method="post">
+        <label for="desired_quantity">必要なVPの数量:</label>
+        <input type="number" id="desired_quantity" name="desired_quantity" required>
+        <br>
+        <label for="current_quantity">現在持っているVPの数量:</label>
+        <input type="number" id="current_quantity" name="current_quantity" required>
+        <br>
+        <input type="submit" value="計算">
+    </form>
+    <div>
+        <h2>結果:</h2>
+        <pre>{{ result }}</pre>
+    </div>
+</body>
+</html>
